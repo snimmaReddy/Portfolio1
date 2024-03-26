@@ -3,6 +3,10 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useState, useEffect } from "react";
+import logo from "../Images/logo.svg";
+import navIcon1 from "../Images/nav-icon1.svg";
+import navIcon2 from "../Images/nav-icon2.svg";
+import navIcon3 from "../Images/nav-icon3.svg";
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -30,7 +34,7 @@ const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={" "} alt="Image" />
+          <img src={logo} alt="Image" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggle-icon"></span>
@@ -68,13 +72,13 @@ const NavBar = () => {
           <span className="navbar-text">
             <div className="social-icon">
               <a href="">
-                <img src={" "} alt="Github Link" />
+                <img src={navIcon1} alt="Github Link" />
               </a>
               <a href="">
-                <img src={" "} alt="LinkedIn Link" />
+                <img src={navIcon2} alt="LinkedIn Link" />
               </a>
               <a href="">
-                <img src={" "} alt="Leetcode Link" />
+                <img src={navIcon3} alt="Leetcode Link" />
               </a>
             </div>
             <button
